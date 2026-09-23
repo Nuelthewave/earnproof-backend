@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v1",
+  "surface": "webhook",
+  "eventType": "proof.created",
+  "description": "Webhook envelope for proof.created event",
+  "fixture": {
+    "specVersion": "1",
+    "id": "synthetic-delivery-12345678",
+    "event": "proof.created",
+    "createdAt": "2025-01-15T12:00:00.000Z",
+    "data": {
+      "proofId": "clx1abc2def3ghi4",
+      "proofType": "MINIMUM_INCOME",
+      "schemaVersion": "earnproof.minimum-income.v1",
+      "status": "ACTIVE",
+      "network": "testnet",
+      "assetCode": "USDC",
+      "assetIssuer": "GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGLA1PIC4CEXLRTKHB0EGB",
+      "periodStart": "2025-01-01T00:00:00.000Z",
+      "periodEnd": "2025-01-31T23:59:59.000Z",
+      "expiresAt": "2025-02-14T12:00:00.000Z",
+      "credentialHash": "sha256:synthetic-abc123def456ghi789jkl012mno345pqr678stu",
+      "contractTransactionHash": null,
+      "issuedAt": "2025-01-15T12:00:00.000Z"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "apiVersion": "v1",
+  "endpoint": "GET /api/v1/issuers",
+  "surface": "rest",
+  "method": "GET",
+  "status": 200,
+  "description": "Paginated issuers list response",
+  "fixture": {
+    "data": [
+      {
+        "id": "clx1abc2def3ghi4",
+        "name": "Synthetic Organization",
+        "slug": "synthetic-org-12345678",
+        "status": "ACTIVE",
+        "metadata": {
+          "description": "Test issuer",
+          "supportUrl": "https://synthetic-12345678.example.invalid/support"
+        },
+        "createdAt": "2025-01-01T00:00:00.000Z",
+        "updatedAt": "2025-01-15T12:00:00.000Z"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 10,
+      "totalCount": 1,
+      "hasNextPage": false
+    }
+  }
+}

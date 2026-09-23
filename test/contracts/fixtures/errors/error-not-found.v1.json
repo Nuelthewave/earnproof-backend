@@ -1,0 +1,13 @@
+{
+  "apiVersion": "v1",
+  "endpoint": "GET /api/v1/proofs/:id",
+  "surface": "rest",
+  "method": "GET",
+  "status": 404,
+  "description": "Not found error response",
+  "fixture": {
+    "error": "Not Found",
+    "message": "Proof not found",
+    "statusCode": 404
+  }
+}

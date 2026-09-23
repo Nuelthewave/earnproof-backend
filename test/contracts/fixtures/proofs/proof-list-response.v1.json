@@ -1,0 +1,32 @@
+{
+  "apiVersion": "v1",
+  "endpoint": "GET /api/v1/proofs",
+  "surface": "rest",
+  "method": "GET",
+  "status": 200,
+  "description": "Paginated proofs list response",
+  "fixture": {
+    "data": [
+      {
+        "id": "clx1abc2def3ghi4",
+        "proofType": "MINIMUM_INCOME",
+        "status": "ACTIVE",
+        "expiresAt": "2025-02-14T12:00:00.000Z",
+        "createdAt": "2025-01-15T12:00:00.000Z"
+      },
+      {
+        "id": "clx1xyz2abc3def4",
+        "proofType": "RECURRING_INCOME",
+        "status": "EXPIRED",
+        "expiresAt": "2024-12-31T23:59:59.000Z",
+        "createdAt": "2024-12-15T12:00:00.000Z"
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "pageSize": 10,
+      "totalCount": 2,
+      "hasNextPage": false
+    }
+  }
+}

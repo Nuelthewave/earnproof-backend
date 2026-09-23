@@ -1,0 +1,19 @@
+{
+  "apiVersion": "v1",
+  "endpoint": "POST /api/v1/proofs",
+  "surface": "rest",
+  "method": "POST",
+  "status": 400,
+  "description": "Validation error response",
+  "fixture": {
+    "error": "Bad Request",
+    "message": "Validation failed",
+    "statusCode": 400,
+    "violations": [
+      {
+        "property": "minimumIncomeAmount",
+        "message": "minimumIncomeAmount must be a positive number"
+      }
+    ]
+  }
+}

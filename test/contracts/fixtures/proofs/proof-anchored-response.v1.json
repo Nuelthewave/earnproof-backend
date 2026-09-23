@@ -1,0 +1,46 @@
+{
+  "apiVersion": "v1",
+  "endpoint": "POST /api/v1/proofs",
+  "surface": "rest",
+  "method": "POST",
+  "status": 201,
+  "description": "Proof creation response with anchored transaction",
+  "fixture": {
+    "proofId": "clx1abc2def3ghi4",
+    "status": "ACTIVE",
+    "verificationUrl": "/api/v1/proofs/clx1abc2def3ghi4/verify",
+    "credential": {
+      "id": "clx1abc2def3ghi4",
+      "type": "EarnProofMinimumIncomeCredential",
+      "schemaVersion": "earnproof.minimum-income.v1",
+      "issuer": "earnproof-backend",
+      "subject": {
+        "walletHash": "sha256:synthetic-e3b0c44298fc1c149afbf4c8996fb92427ae41e4"
+      },
+      "claim": {
+        "operator": "gte",
+        "thresholdAmount": "500.0000000",
+        "assetCode": "USDC",
+        "assetIssuer": "GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGLA1PIC4CEXLRTKHB0EGB",
+        "periodStart": "2025-01-01T00:00:00.000Z",
+        "periodEnd": "2025-01-31T23:59:59.000Z",
+        "qualifyingPaymentCount": 3
+      },
+      "privacy": {
+        "exactIncomeHidden": true,
+        "sourceTransactionsHidden": true
+      },
+      "issuedAt": "2025-01-15T12:00:00.000Z",
+      "expiresAt": "2025-02-14T12:00:00.000Z",
+      "proof": {
+        "type": "HMAC-SHA256",
+        "credentialHash": "sha256:synthetic-abc123def456ghi789jkl012mno345pqr678stu",
+        "signature": "hmac-sha256:synthetic-xyz789uvw012rst345abc678def901ghi234jkl567"
+      }
+    },
+    "anchoring": {
+      "anchored": true,
+      "transactionHash": "synthetic0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2"
+    }
+  }
+}

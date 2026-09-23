@@ -1,0 +1,17 @@
+{
+  "apiVersion": "v1",
+  "endpoint": "GET /api/v1/payments/:id",
+  "surface": "rest",
+  "method": "GET",
+  "status": 200,
+  "description": "Single payment response",
+  "fixture": {
+    "id": "clx1abc2def3ghi4",
+    "address": "GSYNTHETICAABBCCDDEEEFFGGHH1234567890XXXXXXXXXXX",
+    "amount": "250.50",
+    "assetCode": "USDC",
+    "assetIssuer": "GCEZWKCA5VLDNRLN3RPRJMRZOX3Z6G5CHCGLA1PIC4CEXLRTKHB0EGB",
+    "transactionHash": "synthetic0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9",
+    "createdAt": "2025-01-15T10:30:00.000Z"
+  }
+}

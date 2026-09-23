@@ -1,0 +1,17 @@
+{
+  "apiVersion": "v1",
+  "surface": "webhook",
+  "eventType": "proof.verified",
+  "description": "Webhook envelope for proof.verified event",
+  "fixture": {
+    "specVersion": "1",
+    "id": "synthetic-delivery-verify123",
+    "event": "proof.verified",
+    "createdAt": "2025-01-20T15:45:00.000Z",
+    "data": {
+      "proofId": "clx1abc2def3ghi4",
+      "result": "valid",
+      "verifiedAt": "2025-01-20T15:45:00.000Z"
+    }
+  }
+}
